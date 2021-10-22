@@ -1,0 +1,35 @@
+name: ZukanUpdate
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+          bundler-cache: true
+
+      - name: Install dependencies
+        run: |
+          bundle add nokogiri
+          bundle add open-uri
+
+      - name: Run zukan_update
+        run: |
+          ruby zukan_update.rb
+
+      - name: Commit and Push
+        run: |
+          git config user.name "Tzarino"
+          git config user.email "yoshgan.tzarino@gmail.com"
+          git add .
+          git commit -m "update zukan"
+          git pull
+          git push origin master
