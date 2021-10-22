@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FGOランダム図鑑</title>
+    <title>FGOサーヴァントガチャ</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,8 +17,12 @@
   </head>
   <body>
     <div id="pagebody">
-      <h1>FGOランダム図鑑</h1>
-      <p id="current"></p>
+      <h1>FGOサーヴァントガチャ</h1>
+      <div class="tweet-wrapper">
+        <p id="current"></p>
+        <button class="tweet" onclick="tweet()">結果をツイート</button>
+      </div>
+
       <div class="collapse-description">
         <label for="check" id="description">使い方(クリックで展開)</label>
         <input type="checkbox" id="check" />

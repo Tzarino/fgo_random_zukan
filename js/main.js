@@ -65,3 +65,23 @@ Array.prototype.map.call(elms, (elm) => {
     submit(e);
   })
 })
+
+const tweet = () => {
+  const data_url = "https://tzarino.github.io/fgo_random_zukan/";
+  let str = '';
+  let counter = 0;
+  Array.prototype.some.call(document.getElementsByTagName("td"), (elm, index) => {
+    if (index % 2 != 0) {
+      str += elm.innerText + '、';
+      counter++;
+    }
+    if (counter > 5) {
+      str = str.slice(0, -1);
+      str += "……";
+      return true;
+    }
+  })
+  if (counter <= 5) { str = str.slice(0, -1); }
+  let data_text = "FGOサーヴァントガチャ！結果は" + str + "でした！！";
+  window.open('https://twitter.com/share?text=' + data_text + '&url=' + data_url);
+}
