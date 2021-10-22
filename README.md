@@ -1,0 +1,2 @@
+# fgo_random_zukan
+FGOのサーヴァントをランダムに表示するサイト
