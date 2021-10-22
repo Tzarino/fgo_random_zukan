@@ -36,7 +36,7 @@ h1 {
 }
 
 input,
-button {
+.numberButton {
   background-color: white;
   border-radius: 12px;
   border: 0;
@@ -47,7 +47,7 @@ button {
   padding: 4px 20px 0;
 }
 
-button {
+.numberButton {
   color: #eee;
   background-color: cornflowerblue;
 }
@@ -62,4 +62,16 @@ footer > * {
 }
 #maxNumber {
   width: min(25%, 100px);
+}
+
+.tweet-wrapper > * {
+  display: inline-block;
+}
+
+.tweet{
+  background-color: cornflowerblue;
+  border-radius: 12px;
+  border: 0;
+  color: #eee;
+  padding: 4px 20px 0;
 }
