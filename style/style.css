@@ -68,8 +68,8 @@ footer > * {
   display: inline-block;
 }
 
-.tweet{
-  background-color: cornflowerblue;
+.tweet {
+  background-color: #1da1f2;
   border-radius: 12px;
   border: 0;
   color: #eee;

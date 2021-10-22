@@ -1,6 +1,6 @@
-# FGO ランダム図鑑
+# FGO サーヴァントガチャ
 
-FGO のサーヴァントをランダムに表示するサイト。
+FGO のサーヴァントをランダムに表示する。
 
 github pages で作成。 [サイト](https://tzarino.github.io/fgo_random_zukan/)
 
@@ -14,6 +14,4 @@ github pages で作成。 [サイト](https://tzarino.github.io/fgo_random_zukan
 
 # 開発関係
 
-フラットな JS のみで作ってます。変数の安全性が怪しいです。できれば TS に直したいところ。
-
-zukan.json は別レポジトリで随時アップデートできるようにする予定です。
+フラットな JS のみで作っていますが、命名規則等かなり怪しいです。できれば TS に直したいところ。
