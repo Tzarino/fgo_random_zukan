@@ -1,0 +1,48 @@
+.table-wrapper {
+  margin: 10px 70px 70px;
+  box-shadow: 0px 35px 50px rgba(0, 0, 0, 0.2);
+}
+
+.fl-table {
+  border-radius: 5px;
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  white-space: nowrap;
+  background-color: white;
+  table-layout: fixed;
+}
+
+.fl-table td,
+.fl-table th {
+  text-align: center;
+  padding: 8px;
+}
+
+.fl-table td {
+  border-right: 1px solid #f8f8f8;
+  font-size: 12px;
+}
+
+.fl-table thead th {
+  color: #ffffff;
+  background: cornflowerblue;
+}
+
+.fl-table thead th:nth-child(odd) {
+  color: #ffffff;
+  background: #324960;
+}
+
+.fl-table tr:nth-child(even) {
+  background: #f8f8f8;
+}
+
+.no{
+  width 30%;
+}
+
+.name{
+  width: 70%;
+}

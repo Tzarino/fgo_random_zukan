@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 1rem 0;
+}
+body {
+  background-color: #f4f5f7;
+  font-size: 95%;
+  line-height: 1.5;
+  color: #333333;
+}
+@media (max-width: 450px) {
+  div#pagebody {
+    width: 90%;
+  }
+}
+@media (min-width: 450px) {
+  div#pagebody {
+    width: 70%;
+  }
+}
+div#pagebody {
+  margin: 0 auto;
+}
+html[lang="ja"] {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+table {
+  border-color: black;
+  border: 1px solid;
+}
+
+h1 {
+  padding: 1rem 0;
+  border-bottom: 2px solid;
+}
+
+input,
+button {
+  background-color: white;
+  border-radius: 12px;
+  border: 0;
+  width: 70px;
+  box-sizing: border-box;
+  color: rgb(87, 87, 87);
+  font-size: larger;
+  padding: 4px 20px 0;
+}
+
+button {
+  color: #eee;
+  background-color: cornflowerblue;
+}
+
+footer {
+  border-top: 1px solid;
+}
+
+footer > * {
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+#maxNumber {
+  width: min(25%, 100px);
+}

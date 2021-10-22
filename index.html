@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FGOランダム図鑑</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="table.css" />
+    <link rel="stylesheet" href="collapse.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="pagebody">
+      <h1>FGOランダム図鑑</h1>
+      <p id="current"></p>
+      <div class="collapse-description">
+        <label for="check" id="description">使い方(クリックで展開)</label>
+        <input type="checkbox" id="check" />
+        <div onclick="">
+          <p>1人/5人ボタンクリックでそれぞれの数だけサーヴァント表示</p>
+          <p>数字を入力→送信で任意の数のサーヴァントを表示可能</p>
+          <p>連打しても鯖に負荷はかかりません。好きなだけ押してね</p>
+        </div>
+      </div>
+      <form id="form">
+        <input
+          type="number"
+          name="maxNumber"
+          id="maxNumber"
+          min="0"
+          autofocus
+          placeholder="1"
+        />
+        <input id="submit" type="submit" value="送信" />
+        <button type="button" class="numberButton" value="1">1人</button>
+        <button type="button" class="numberButton" value="5">5人</button>
+      </form>
+      <div class="tabel-wrapper">
+        <table class="fl-table">
+          <thead>
+            <tr>
+              <th class="no">No.</th>
+              <th class="name">Name</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <footer>
+      <p>制作: 芳賀ツァリノ</p>
+      <p>
+        コンタクト: <a href="https://twitter.com/Yoshgan_Tzarino">Twitter</a>
+      </p>
+    </footer>
+  </body>
+  <script src="main.js"></script>
+</html>

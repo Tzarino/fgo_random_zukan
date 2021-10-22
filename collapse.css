@@ -1,0 +1,28 @@
+input + div {
+  display: none;
+}
+input:checked + div {
+  display: block;
+}
+#check {
+  display: none;
+}
+#description {
+  display: block;
+  width: 100%;
+  font-size: larger;
+}
+
+.collapse-description {
+  background-color: #324960;
+  color: white;
+  border-radius: 1rem;
+  padding: 0 2rem;
+}
+.collapse-description > div > p {
+  padding: 0.3rem;
+}
+
+.collapse-description:hover {
+  background-color: #5984af;
+}
