@@ -81,7 +81,7 @@ const tweet = () => {
       return true;
     }
   })
-  if (counter == 5) { str = str.slice(0, -1); }
+  if (counter <= 5) { str = str.slice(0, -1); }
   let data_text = "FGOサーヴァントガチャ！結果は" + str + "でした！！";
   window.open('https://twitter.com/share?text=' + data_text + '&url=' + data_url);
 }
