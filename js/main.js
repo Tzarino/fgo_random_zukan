@@ -26,6 +26,9 @@ const submit = (e = null) => {
   } else {
     number = e.target.value;
   }
+  if (number >= zukan_length) {
+    number = zukan_length;
+  }
   let servant_arr = [];
   let random_numbers = randomZukanNoArr(number);
   random_numbers.map((x, i) => {
