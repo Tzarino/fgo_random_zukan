@@ -18,8 +18,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          bundle add nokogiri
-          bundle add open-uri
+          bundle install
 
       - name: Run zukan_update
         run: |

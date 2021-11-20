@@ -1,0 +1,27 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    date (3.2.2)
+    mini_portile2 (2.6.1)
+    nokogiri (1.12.5)
+      mini_portile2 (~> 2.6.1)
+      racc (~> 1.4)
+    open-uri (0.2.0)
+      stringio
+      time
+      uri
+    racc (1.6.0)
+    stringio (3.0.1)
+    time (0.2.0)
+      date
+    uri (0.11.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  nokogiri (~> 1.12)
+  open-uri (~> 0.2.0)
+
+BUNDLED WITH
+   2.1.4
