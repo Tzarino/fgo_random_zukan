@@ -29,5 +29,4 @@ jobs:
           git config user.email "yoshgan.tzarino@gmail.com"
           git add .
           git commit -m "update zukan"
-          git pull
           git push origin master
