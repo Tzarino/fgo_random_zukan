@@ -43,7 +43,10 @@ const submit = (e = null) => {
   for (let index = 0; index < number; index++) {
     var row = tb.insertRow();
     row.insertCell().textContent = servant_arr[index][0];
-    row.insertCell().textContent = servant_arr[index][1];
+    let a = document.createElement("a");
+    a.href = "https://www.wicurio.com/grand_order/index.php?" + servant_arr[index][1];
+    a.text = servant_arr[index][1];
+    row.insertCell().appendChild(a);
   }
 }
 

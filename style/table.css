@@ -46,3 +46,11 @@
 .name{
   width: 70%;
 }
+
+.fl-table a{
+  color: inherit;
+}
+
+.fl-table a:hover{
+  color: #6b60ff;
+}
