@@ -59,7 +59,8 @@ const onLoad = async () => {
   zukan = await fetch('./zukan.json').then((data) => data.json());
   zukan_length = Object.keys(zukan).length;
   var current = document.getElementById("current");
-  current.textContent = `${zukan[zukan_length]}まで。全${zukan_length}人。`
+  current.textContent = `${zukan[zukan_length]}まで。全${zukan_length}人。`;
+  document.getElementById("max").value = zukan_length;
 }
 
 window.addEventListener('load', onLoad())

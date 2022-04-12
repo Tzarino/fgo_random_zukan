@@ -41,15 +41,33 @@ input,
   border-radius: 12px;
   border: 0;
   width: 70px;
+  height: 40px;
   box-sizing: border-box;
   color: rgb(87, 87, 87);
   font-size: larger;
-  padding: 4px 20px 0;
+  padding: 5px 20px;
+  text-align: center;
 }
 
 .numberButton {
   color: #eee;
   background-color: cornflowerblue;
+  width: 0px;
+  border-radius: 12px;
+  border: 0;
+  width: 70px;
+  height: 40px;
+  box-sizing: border-box;
+  font-size: smaller;
+  text-align: center;
+  padding: 0px;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .numberButton {
+    width: 50px;
+  }
 }
 
 footer {
