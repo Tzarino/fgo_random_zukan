@@ -30,6 +30,8 @@
         <input type="checkbox" id="check" />
         <div onclick="">
           <p>1人/5人ボタンクリックでそれぞれの数だけサーヴァント表示</p>
+          <p>MAXを押すと、現在実装されているサーヴァントがすべて表示</p>
+          <p>逆順表示をクリックすると、結果表示が図鑑番号逆順に</p>
           <p>数字を入力→送信で任意の数のサーヴァントを表示可能</p>
           <p>ツイート共有には6人まで載ります</p>
           <p>連打してもサーバに負荷はかかりません。好きなだけ押してね</p>
@@ -45,11 +47,15 @@
           placeholder="1"
         />
         <input id="submit" type="submit" value="送信" />
-        
+
         <button type="button" class="numberButton" value="1">1人</button>
         <button type="button" class="numberButton" value="5">5人</button>
         <button type="button" class="numberButton" id="max">MAX</button>
       </form>
+      <div class="reverseButton">
+        <input type="checkbox" id="reverse" name="reverse" />
+        <label for="reverse">逆順表示</label>
+      </div>
       <div class="tabel-wrapper">
         <table class="fl-table">
           <thead>

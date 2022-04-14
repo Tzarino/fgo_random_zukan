@@ -93,3 +93,14 @@ footer > * {
   color: #eee;
   padding: 4px 20px 0;
 }
+
+.reverseButton,
+.reverseButton > * {
+  margin: 0px;
+  padding: 0px 0px;
+}
+#reverse {
+  width: 20px;
+  height: 20px;
+  transform: translateY(4px);
+}

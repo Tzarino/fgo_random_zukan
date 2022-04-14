@@ -40,6 +40,11 @@ const submit = (e = null) => {
     key1[0] - key2[0]
   ))
 
+  // if localStorage "reverse" is true, reverse the array
+  if (localStorage.getItem("reverse") == "true") {
+    servant_arr.reverse();
+  }
+
   for (let index = 0; index < number; index++) {
     var row = tb.insertRow();
     row.insertCell().textContent = servant_arr[index][0];
@@ -61,6 +66,7 @@ const onLoad = async () => {
   var current = document.getElementById("current");
   current.textContent = `${zukan[zukan_length]}まで。全${zukan_length}人。`;
   document.getElementById("max").value = zukan_length;
+  document.getElementById("reverse").checked = localStorage.getItem("reverse") == "true";
 }
 
 window.addEventListener('load', onLoad())
@@ -71,6 +77,16 @@ Array.prototype.map.call(elms, (elm) => {
     e.preventDefault();
     submit(e);
   })
+})
+
+// when click has occured, change localStorage value "reverse" reveresed
+document.getElementById("reverse").addEventListener("click", () => {
+  if (localStorage.getItem("reverse") == "true") {
+    localStorage.setItem("reverse", "false");
+  } else {
+    localStorage.setItem("reverse", "true");
+  }
+  document.getElementById("reverse").checked = localStorage.getItem("reverse") == "true";
 })
 
 const tweet = () => {
